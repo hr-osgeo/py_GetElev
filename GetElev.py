@@ -17,8 +17,7 @@ import sys
 from optparse import OptionParser
 def get_argv(argv):
     usage = "usage: %prog <-i inputfile.shp> <-d dem.tif> <-o outputfile.shp>"
-    description = "Get coordinates from point cloud and get height value from digital elevation model"
-    "Get coordinates for each point from point cloud and get height value from digital elevation model. Create output shapefile with points and their height values"
+    description = "Python sript get coordinates for each point from point cloud and get height value from digital elevation model, then create output shapefile with points and their height values"
     parser = OptionParser(usage)
     parser.add_option("-i", "--inputfile", action="store", type="string", dest="in_file", help="REQUIRED - input shapefile point cloud")
     parser.add_option("-d", "--dem", action="store", dest="dem", help="REQUIRED - digital elevation model, source for elevation data")
